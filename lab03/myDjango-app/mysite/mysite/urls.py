@@ -23,5 +23,8 @@ import pure_html.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', teammate.views.index, name='index'),
-    path('pure_html/', pure_html.views.index, name='index')
+    path('pure_html/', pure_html.views.index, name='index'),
+    path('pure_html/indexint.html', pure_html.views.indexint, name='indexint'),
+    path('pure_html/indexcli.html', pure_html.views.indexcli, name='indexcli'),
+    path('pure_html/index2.html', pure_html.views.index2, name='index2')
 ]
